@@ -1,6 +1,4 @@
-# Hard Holdout Judging
-
-**Empirically Testing Judge Exclusion as a Mitigation for Self-Preference Bias in LLM-as-a-Judge Ensembles**
+# Self-Preference Bias in LLM Juries: A Controlled Test of Hard Judge Exclusion
 
 Samuel Eder — Johannes Kepler University Linz (JKU)
 
@@ -32,11 +30,6 @@ This paper asks: does *hard holdout judging* (programmatically excluding the gen
 │   ├── theoretical_jury_size.py  # Pivotal-voter formula derivation
 │   ├── explore_arena.py       # Dataset exploration utilities
 │   └── smoke_test.py          # Sanity check before a full run
-│
-├── paper/
-│   ├── paper_draft.md         # Full paper in Markdown
-│   └── LaTeXTemplates_journal-article_v2/
-│       └── template.tex       # Camera-ready LaTeX source
 │
 └── requirements.txt
 ```
@@ -85,15 +78,6 @@ python scripts/theoretical_jury_size.py
 
 Steps 3–5 only require the downloaded `votes.json` and do not call any APIs.
 
-### Compile the paper
-
-```bash
-cd paper/LaTeXTemplates_journal-article_v2
-pdflatex template
-biber template
-pdflatex template
-```
-
 ## Model Pool
 
 | Model | Provider |
@@ -122,8 +106,7 @@ All API calls routed through [OpenRouter](https://openrouter.ai).
 
 ```bibtex
 @article{eder2026holdout,
-  title   = {Hard Holdout Judging: Empirically Testing Judge Exclusion as a
-             Mitigation for Self-Preference Bias in LLM-as-a-Judge Ensembles},
+  title   = {Self-Preference Bias in LLM Juries: A Controlled Test of Hard Judge Exclusion},
   author  = {Eder, Samuel},
   journal = {arXiv preprint},
   year    = {2026}
