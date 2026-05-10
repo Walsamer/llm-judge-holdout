@@ -38,7 +38,7 @@ This paper asks: does *hard holdout judging* (programmatically excluding the gen
 
 The 300 sampled matchups and 4,196 individual judge votes are published separately on HuggingFace:
 
-**[huggingface.co/datasets/samueleder/llm-judge-holdout](https://huggingface.co/datasets/samueleder/llm-judge-holdout)** *(link to be updated)*
+**[huggingface.co/datasets/clarsam/llm-judge-holdout](https://huggingface.co/datasets/clarsam/llm-judge-holdout)**
 
 | File | Description |
 |------|-------------|
