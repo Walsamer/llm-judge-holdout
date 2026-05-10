@@ -1,0 +1,32 @@
+data/
+results/
+.env
+!.env.example
+
+.DS_Store
+paper/Untitled-1
+
+# raw source datasets — too large, publicly available on HuggingFace
+data/arena-human-preference-140k/
+data/chatbot_arena_conversations/
+data/arena_matchups.json
+
+# pycache
+**/__pycache__/
+**/*.pyc
+
+# Claude Code internal files
+CLAUDE.md
+
+#working_files
+bugs_and_problems_found.md
+experiment_design.md
+history.md
+next_steps.md
+paper_outline.md
+research_question.md
+
+#paper in progress files
+paper/
+
+.vscode/
